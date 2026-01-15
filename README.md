@@ -1,7 +1,14 @@
-## Data attribution
+# Game Backlog Concierge
 
-This project uses the dataset **"Steam Store Games (Clean dataset)"** by **Nik Davis** from Kaggle, licensed under **CC BY 4.0**.
+A lightweight Streamlit app that recommends games using Steam metadata (tags/genres), plus platform and multiplayer constraints, with an optional “time-to-beat” length preference (playtime proxy).
 
-Source: https://www.kaggle.com/datasets/nikdavis/steam-store-games/data
+**Live app:** https://gamebacklogconcierge-rvkaxrcssczuj3jsudu3ug.streamlit.app/  
+**Repo:** https://github.com/brunohawkins/game_backlog_concierge
 
-The dataset is used to provide game metadata (tags, genres, playtime proxies, etc.) for recommendation.
+## Run locally
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python -m streamlit run app.py
